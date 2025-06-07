@@ -1,5 +1,3 @@
-
-
 var w = c.width = window.innerWidth,
 		h = c.height = window.innerHeight,
 		ctx = c.getContext( '2d' ),
@@ -9,9 +7,9 @@ var w = c.width = window.innerWidth,
 		
 		opts = {
 			strings: ['FELIZ', 'CUMPLEAÑOS', 'MONICA GERALDINE'],
-			charSize: 30,
-			charSpacing: 35,
-			lineHeight: 40,
+			charSize: 20,
+			charSpacing: 25,
+			lineHeight: 30,
 			
 			cx: w / 2,
 			cy: h / 2,
