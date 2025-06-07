@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Feliz Cumpleaños Moni!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+<body>
+
+
+<div class="contenedor">
+    <!-- Div 1: Imagen -->
+    <div class="seccion">
+    <img src="birthday-cake.gif" alt="">
+    </div>
+
+    <!-- Div 2: Canvas -->
+    <div class="seccion">
+     <canvas id=c></canvas>
+    </div>
+
+    <!-- Div 3: Imagen con bordes redondeados -->
+    <div class="seccion">
+      <img src="2.gif" class="imagen-redondeada">
+      <audio id="miSonido" src="m.mp3" preload="auto"></audio>
+      <button id="playAudio">DAR CLICK</button>
+      <p>CON MUCHO Amor😘<span>, BY <a>MARCO</a></span>
+    </div>
+  </div>
+
+
+<script>
+  document.getElementById("playAudio").addEventListener("click", () => {
+    const audio = document.getElementById("miSonido");
+    audio.play().catch(err => console.error("Error al reproducir audio:", err));
+  });
+</script>
+<script  src="./script.js"></script>
+
+</body>
+
+</html>
+
